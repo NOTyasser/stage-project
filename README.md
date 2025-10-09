@@ -1,8 +1,10 @@
+PROJECT DIAGRAM
+
 stage-project/
 │
 ├── src/
 │   ├── main/
-│   │   ├── java/com/example/stageproject/
+│   │   ├── java/ma/yasser/stageproject/
 │   │   │   ├── StageProjectApplication.java   ← point d’entrée
 │   │   │   ├── controller/                   ← pour les APIs
 │   │   │   ├── service/                      ← logique métier
@@ -10,7 +12,18 @@ stage-project/
 │   │   │   └── repository/                   ← gestion des données (DB)
 │   │   └── resources/
 │   │       ├── application.properties        ← configuration
-│   │       └── static/ & templates/          ← HTML, CSS (si tu veux)
-│   └── test/                                ← tests unitaires
+│   │       └── static/ & templates/          ← HTML, CSS (optional)
+│   └── test/                                 ← tests unitaires
 │
-└── pom.xml                                  ← dépendances Maven
+└── pom.xml                                   ← dépendances Maven
+
+
+
+src/
+ └── main/
+     └── java/
+         └── ma/yasser/stageproject/
+             ├── StageProjectApplication.java   ← Principal File
+             ├── model/                         ← User.java
+             ├── controller/                    ← LoginController.java
+             └── service/                       ← LoginService.java
